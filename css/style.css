@@ -23,6 +23,7 @@ header h1 {
 nav {
     display: flex;
     width: 900px;
+    height: 40px;
     margin: 5px auto;
     justify-content: space-around;
     background-color: gray;
@@ -41,6 +42,10 @@ nav a{
     color: black;
     font-weight: bolder;
     border-radius: 5px;
+}
+
+nav a:hover {
+    color: rgb(116, 36, 36) ;
 }
 
 main {
