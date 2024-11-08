@@ -40,12 +40,12 @@ nav a{
     text-decoration: none;
     color: black;
     font-weight: bolder;
-    background-color: rebeccapurple;
     border-radius: 5px;
 }
 
 main {
     width: 1080px;
+    height: 1080px;
     margin: 10px auto;
 }
 
@@ -54,6 +54,8 @@ section {
     justify-content:space-evenly ;
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 1090px;
+    height: 200px;
 }
 
 span {
@@ -76,5 +78,11 @@ figure {
     text-align: center;
     background-color: white;
     border-radius: 5px;
+}
+
+figure:hover {
+    width: 185px;
+    height: 205px;
     box-shadow: 5px 5px 5px black;
+
 }
