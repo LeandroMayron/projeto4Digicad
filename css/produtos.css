@@ -85,9 +85,7 @@ figure {
     border-radius: 5px;
 }
 
-figure:hover {
-    width: 185px;
-    height: 205px;
+figure:hover {  
     box-shadow: 5px 5px 5px black;
 
 }
