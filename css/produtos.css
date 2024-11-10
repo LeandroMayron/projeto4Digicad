@@ -48,13 +48,9 @@ nav a:hover {
     color: rgb(116, 36, 36) ;
 }
 
-a:hover{
-    color: rgb(116, 36, 36) ;
-}
-
 main {
     width: 1080px;
-    height: 1080px;
+    height: 500px;
     margin: 10px auto;
 }
 
