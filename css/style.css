@@ -90,10 +90,7 @@ figure {
 }
 
 figure:hover {
-    width: 185px;
-    height: 205px;
     box-shadow: 5px 5px 5px black;
-
 }
 
 footer {
