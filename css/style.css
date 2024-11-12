@@ -11,12 +11,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: grey;
+    background-color: #1E2A38;
 }
 body {
-    background-color: gainsboro;
+    background-color: #3C4858;
 }
 
+h1, h3 {
+    color: #F4F7F6;
+}
+
+figcaption {
+    color: #3C4858;
+    font-weight: bolder;
+}
 header h1 {
     margin-left: 10px;
 }
@@ -35,7 +43,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(66, 66, 66);
+    background-color: #3C4858;
+    box-shadow: 2px 2px 5px gray;
 }
 
 .item {
@@ -51,21 +60,33 @@ nav {
 }
 
 .hidden {
-    margin-top: 1px;
+    opacity: 0;
+    transition: opacity 0,5s;
+}
+
+.hidden2 {
     opacity: 0;
     transition: opacity 0,5s;
 }
 
 .minhaConta:hover .hidden {
-    margin-top: 1px;
     opacity: 1;
     z-index: 2;
-    background-color: rgb(66, 66, 66);
+    background-color: #3C4858;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.minhaConta:hover .hidden2 {
+    opacity: 1;
+    z-index: 2;
+    border-bottom-left-radius: 10px;
+    background-color: #3C4858;
+    box-shadow: 2px 2px 5px gray;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #61A4BC;
     font-weight: bolder;
     font-size: 20px;
 }
@@ -73,16 +94,12 @@ a {
 nav a{
     padding: 5px 10px;
     text-decoration: none;
-    color: black;
+    color: #61A4BC;
     font-weight: bolder;
 }
 
-nav a:hover {
-    color: rgb(116, 36, 36) ;
-}
-
 a:hover{
-    color: rgb(116, 36, 36) ;
+    color: #F4F7F6;
 }
 
 main {
@@ -136,4 +153,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1E2A38;
 }

@@ -10,12 +10,21 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    background-color: grey;
+    justify-content: space-evenly;
+    background-color: #1E2A38;
 }
 body {
-    background-color: gainsboro;
+    background-color: #3C4858;
 }
 
+h1, h3 {
+    color: #F4F7F6;
+}
+
+figcaption {
+    color: #3C4858;
+    font-weight: bolder;
+}
 header h1 {
     margin-left: 10px;
 }
@@ -26,12 +35,58 @@ nav {
     height: 40px;
     margin: 5px auto;
     justify-content: space-around;
-    background-color: gray;
+}
+
+.minhaConta {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3C4858;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.visible {
+    z-index: 1;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0,5s;
+}
+
+.hidden2 {
+    opacity: 0;
+    transition: opacity 0,5s;
+}
+
+.minhaConta:hover .hidden {
+    opacity: 1;
+    z-index: 2;
+    background-color: #3C4858;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.minhaConta:hover .hidden2 {
+    opacity: 1;
+    z-index: 2;
+    border-bottom-left-radius: 10px;
+    background-color: #3C4858;
+    box-shadow: 2px 2px 5px gray;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #61A4BC;
     font-weight: bolder;
     font-size: 20px;
 }
@@ -39,19 +94,23 @@ a {
 nav a{
     padding: 5px 10px;
     text-decoration: none;
-    color: black;
+    color: #61A4BC;
     font-weight: bolder;
-    border-radius: 5px;
 }
 
-nav a:hover {
-    color: rgb(116, 36, 36) ;
+a:hover{
+    color: #F4F7F6;
 }
 
 main {
     width: 1080px;
     height: 500px;
     margin: 10px auto;
+}
+
+p {
+    font-weight: bolder;
+    color: rgb(60, 161, 60);
 }
 
 section {
@@ -85,9 +144,8 @@ figure {
     border-radius: 5px;
 }
 
-figure:hover {  
+figure:hover {
     box-shadow: 5px 5px 5px black;
-
 }
 
 footer {
