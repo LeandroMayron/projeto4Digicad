@@ -1,9 +1,12 @@
 .formulario {
-    width: 900px;
-    height: 530px;
+    width: 840px;
+    height: 580px;
     display: flexbox;
-    font-size: 20px;
-    background-color: green;
+    font-size: 18px;
+    color: #61A4BC;
+    background-color: #3C4858;
+    border: 5px solid #1E2A38;
+    box-shadow: 1px 5px 5px 15px ;
 }
 
 fieldset {
@@ -20,6 +23,12 @@ fieldset {
 
 .areaEmail {
     width: 50%;
+    padding-left: 15px;
+}
+
+.areaSenha {
+    width: 50%;
+    padding-left: 15px;
 }
 
 .fieldEmail {
@@ -57,7 +66,6 @@ fieldset {
     justify-content: space-evenly;
     width: 50%;
     height: 50vh;
-    background-color: violet;
 }
 
 .areaRadio {
@@ -73,9 +81,10 @@ fieldset {
 }
 
 .areaEndereco {
+    padding-left: 15px;
     display: flex;
-    width: 50%;
     flex-direction: column;
+    width: 50%;
+    height: 50vh;
     justify-content: space-evenly;
-    background-color: brown;
 }
