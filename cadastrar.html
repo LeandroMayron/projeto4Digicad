@@ -37,108 +37,113 @@
                         </fieldset>
                         <fieldset class="fieldEmail">
                             <label for="email">Repetir e-mail</label>
-                            <input type="email" id="re-email" name="re-email">
+                            <input title="email" type="email" id="re-email" name="re-email">
                         </fieldset>
                     </div>
                     <div class="areaSenha">
                         <fieldset class="fieldSenha">
                             <label for="pwd">Crie a sua senha</label>
-                            <input type="password" id="password" name="password">
+                            <input title="senha" type="password" id="password" name="password">
                         </fieldset>
                         <fieldset class="fieldSenha">
                             <label for="pwd">Repitir senha</label>
-                            <input type="password" id="re-password" name="re-password">
+                            <input title="re-password" type="password" id="re-password" name="re-password">
                         </fieldset>
                     </div>
                 </div>
-                <div class="areaCadastro">
+                <div class="telaCadastro">
+                    <div class="areaCadastro">
                         <legend>Dados cadastrais</legend>
+                        <div class="areaRadio">
+                            <fieldset>
+                                <input type="radio" id="cpf" name="certificado" value="CPF">
+                                <label for="cpf">CPF</label>
+                            </fieldset>
+                            <fieldset>
+                                <input type="radio" id="cnpj" name="certificado" value="cnps">
+                                <label for="cnpj">CNPJ</label>
+                            </fieldset>
+                        </div>
                         <fieldset>
-                            <input type="radio" id="cpf" name="certificado" value="CPF">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name">
+                        </fieldset>
+                        <fieldset>
+                            <label for="sobreNome">Sobrenome</label>
+                            <input title="sobrenome" type="text" name="sobrenome" id="sobrenome">
+                        </fieldset>
+                        <fieldset>
+                            <label for="sexo">Sexo</label>
+                            <select name="sexo" id="sexo">
+                                <option value="">Selecione</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
                             <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" id="cpf">
                         </fieldset>
                         <fieldset>
-                            <input type="radio" id="cnpj" name="certificado" value="cnps">
-                            <label for="cnpj">CNPJ</label>
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" name="telefone" id="telefone">
                         </fieldset>
-                    <fieldset>
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name">
-                    </fieldset>
-                    <fieldset>
-                        <label for="sobreNome">Sobrenome</label>
-                        <input type="text" name="sobrenome" id="sobrenome">
-                    </fieldset>
-                    <fieldset>
-                        <label for="sexo">Sexo</label>
-                        <select name="sexo" id="sexo">
-                            <option value="">Selecione</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="feminino">Feminino</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <label for="cpf">CPF</label>
-                        <input type="number" name="cpf" id="cpf">
-                    </fieldset>
-                    <fieldset>
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone" id="telefone">
-                    </fieldset>
-                    <fieldset>
-                        <label for="cel">Celular</label>
-                        <input type="tel" name="celular" id="celular">
-                    </fieldset>
-                    <fieldset>
-                        <label for="nascimento">Nascimento</label>
-                        <input type="date" name="nascimento" id="nascimento">
-                    </fieldset>
-                    <fieldset>
-                        <input type="checkbox" name="informacoes" id="informacoes">
-                        <label for="informacoes">Receber ofertas e novidades por e-mail</label>
-                    </fieldset>
+                        <fieldset>
+                            <label for="cel">Celular</label>
+                            <input title="telefone" type="tel" name="celular" id="celular">
+                        </fieldset>
+                        <fieldset>
+                            <label for="nascimento">Nascimento</label>
+                            <input type="date" name="nascimento" id="nascimento">
+                        </fieldset>
+                        <fieldset>
+                            <input type="checkbox" name="informacoes" id="informacoes">
+                            <label for="informacoes">Receber ofertas e novidades por e-mail</label>
+                        </fieldset>
 
+                    </div>
+                    <div class="areaEndereco">
+                        <fieldset>
+                            <legend> Endereço de entrega</legend>
+                            <fieldset>
+                                <label for="cep">CEP</label>
+                                <input type="text" id="cep" name="cep">
+                            </fieldset>
+                            <fieldset>
+                                <label for="rua">Rua</label>
+                                <input type="text" name="rua" id="rua">
+                            </fieldset>
+                            <fieldset>
+                                <label for="numero">Número</label>
+                                <input type="number" name="numero" id="numero">
+                            </fieldset>
+                            <fieldset>
+                                <input type="checkbox" name="semNumb" id="semNumb">
+                                <label for="semNumb">Sem número</label>
+                            </fieldset>
+                            <fieldset>
+                                <label for="complemento">Complemento</label>
+                                <input type="text" name="complemento" id="complemento">
+                            </fieldset>
+                            <fieldset>
+                                <label for="referencia">Referência</label>
+                                <input type="text" name="referencia" id="referencia">
+                            </fieldset>
+                            <fieldset>
+                                <label for="bairro">Bairro</label>
+                                <input type="text" name="bairro" id="bairro">
+                            </fieldset>
+                            <fieldset>
+                                <label for="cidade">Cidade</label>
+                                <input type="text" id="cidade" name="cidade">
+                            </fieldset>
+                            <fieldset>
+                                <label for="estado">Estado</label>
+                                <input type="text" id="estado" name="estado">
+                            </fieldset>
+                        </fieldset>
+                    </div>
                 </div>
-
-                <fieldset>
-                    <legend> Endereço de entrega</legend>
-                    <fieldset>
-                        <label for="cep">CEP</label>
-                        <input type="number" id="cep" name="cep">
-                    </fieldset>
-                    <fieldset>
-                        <label for="rua">Rua</label>
-                        <input type="text" name="rua" id="rua">
-                    </fieldset>
-                    <fieldset>
-                        <label for="numero">Número</label>
-                        <input type="number" name="numero" id="numero">
-                    </fieldset>
-                    <fieldset>
-                        <input type="checkbox" name="semNumb" id="semNumb">
-                        <label for="semNumb">Sem número</label>
-                    </fieldset>
-                    <fieldset>
-                        <label for="complemento">Complemento</label>
-                        <input type="text" name="complemento" id="complemento">
-                    </fieldset>
-                    <fieldset>
-                        <label for="referencia">Referência</label>
-                        <input type="text" name="referencia" id="referencia">
-                    </fieldset>
-                    <fieldset>
-                        <label for="bairro">Bairro</label>
-                        <input type="text" name="bairro" id="bairro">
-                    </fieldset>
-                    <fieldset>
-                        <label for="cidade">Cidade</label>
-                        <input type="text" id="cidade" name="cidade">
-                    </fieldset>
-                    <fieldset>
-                        <label for="estado">Estado</label>
-                        <input type="text" id="estado" name="estado">
-                    </fieldset>
-                </fieldset>
             </div>
         </section>
     </main>
