@@ -36,17 +36,17 @@ fieldset {
     padding-left: 15px;
 }
 
-.fieldEmail {
+.fieldArea {
     margin-top: 5px;
     display: flex;
 }
 
-.fieldEmail > label {
+.fieldArea > label {
     width: 130px;
     display: inline-block;
 }
 
-.fieldEmail > input {
+.fieldArea > input {
     width: 200px;
 }
 
