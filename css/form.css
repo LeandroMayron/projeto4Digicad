@@ -1,12 +1,17 @@
 .formulario {
-    width: 840px;
-    height: 580px;
+    width: 45rem;
+    height: 70vh;
     display: flexbox;
     font-size: 18px;
     color: #61A4BC;
     background-color: #3C4858;
     border: 5px solid #1E2A38;
     box-shadow: 1px 5px 5px 15px ;
+}
+
+legend {
+    font-size: 12px;
+    font-weight: bolder;
 }
 
 fieldset {
@@ -87,4 +92,19 @@ fieldset {
     width: 50%;
     height: 50vh;
     justify-content: space-evenly;
+}
+
+.areaBotao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    width: 80px;
+    height: 30px;
+    background-color: #3C4858;
+    box-shadow: 1px 1px 4px 3px #61A4BC;
+    font-weight: bolder;
+    color: #61A4BC;
 }
